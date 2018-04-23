@@ -12,16 +12,21 @@ public class TesthashtableSub {
 	
 		
 		Hashtable<String,String> hastab1 =new Hashtable<String,String>();
-		hastab.put("location1", "delhi");
-		hastab.put("location2", "noida");
-		hastab.put("location3", "Banglore");
+		hastab1.put("location1", "delhi");
+		hastab1.put("location2", "noida");
+		hastab1.put("location3", "Banglore");
 		
 		Hashtable<String,Hashtable<String,String>> hastab2 =new Hashtable<String,Hashtable<String,String>>();
 		hastab2.put("institute", hastab);
 		hastab2.put("country", hastab1);
 		
-		System.out.println(hastab2.get("institute").get("Course1"));
-		System.out.println(hastab2.get("country").get("location1"));
+	
+		
+//		System.out.println(hastab.get("location2"));
+//		System.out.println(hastab.get("Course1"));
+		
+		System.out.println(hastab2.get("institute").get("Course2"));
+		System.out.println(hastab2.get("country").get("location2"));
 		
 	}
 
