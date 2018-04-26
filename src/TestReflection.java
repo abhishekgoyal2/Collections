@@ -9,8 +9,12 @@ public class TestReflection {
 
 		String x="click";
 		
+		
 		Method method =TestReflection.class.getMethod(x, String.class);
 		
+		String Classname=TestReflection.class.getName();
+		
+		System.out.println(Classname);
 		method.invoke(method, "reflection method") ;
 	}
 	
@@ -19,5 +23,7 @@ public class TestReflection {
 	{
 		System.out.println("Click method" +x);
 	}
+	
+	
 
 }
